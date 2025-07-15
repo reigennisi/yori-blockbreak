@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>負荷咆</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    button {
+      padding: 15px 30px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <h1>本当に押していいのか</h1>
+  <button onclick="openTabs()">タブを開く</button>
+
+  <script>
+  //こんにちは、この文に気づきましたか？修正部分をこの色の文字で説明します。それに従ってください。
+  // それでもできない場合はchatGPTにぶち込んで聞いてみてください。
+    
+  let youtube="https://www.youtube.com/?app=desktop&hl=ja" 
+  let 初期URL = "chrome-extension://jbddgjglgkkneonnineaohdhabjbgopi/pages/message-page.html?mode=blocked&category=908"
+    function openTabs() {
+      const baseUrl = youtube; // ← もし開けなかったら元からある"初期URL"を消してブロックされたページのURLに変更。letの方をいじらんくておｋ
+      
+      for (let i = 1; i <= 40; i++) {
+        const url = `${baseUrl}?id=${i}`;
+        window.open(url, '_blank');
+      }
+    }
+    //治すとこと言ったらこれぐらいしかありませんね。それ以外なにか直したほうがいいところがあったら連絡ください。
+    
+  </script>
+</body>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+</style>
+<div id="aaa">※このボタンを押すと開いてるウィンドウに40個のブロックタブを開きます。</div>
+<div>これを使ったら簡単にブロックを解除することができますが、</div>
+<div>学校で"学習のために"配布されたタブレットですのでブロックを解除して、本来のChromebookの使用用途以外のことをすることに対して</div>
+<div>どう思うのか、リスクに対してのリターンはあるのかどうか、そこら辺を理解したうえで使用してください。</div>
+<div>これを使用したのはあなたです。そのため責任は一切取ることはできません。</div>
+<div>そこはご了承ください</dIV>
+<div>もしボタンをクリックしても作動しなかった際は管理者に聞くかや自分で治すかどうかしてください</div>
+<div>Chromebookにはブロックされていないプログラミングサイトがあるため、それを使用して直してください。</div>
+<div>使用する際はポップアップのブロックを解除してからご使用ください</div>
+<div>ブロック解除方法動画</div>
+
+<script>
+elm.style.position="absolute";
+elm.style.top = "100px";
+elm.style.left = "400px";
+</script>
+<video controls width="640" height="360" style="display:block; margin: 20px auto;">
+  <source src="video.mp4" type="video/mp4">
+  このブラウザでは動画を再生できません。
+</video>
+
+</html>
